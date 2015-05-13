@@ -1,0 +1,11 @@
+# IMPORTANT: Set this to false.
+demo: false
+
+# Theme customization is done on this file instead of _config.yml so that
+# you don't have to restart Jekyll to see changes.
+
+photo: "https://avatars3.githubusercontent.com/u/7128551?v=3&s=460"
+name: "Griffin Moe"
+copy: "A musician getting a Master's degree in Computer Science, for reasons known only to himself."
+
+color: default
