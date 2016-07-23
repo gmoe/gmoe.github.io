@@ -2,14 +2,6 @@
   margin-bottom: $spacing-unit;
 }
 
-.align-left {
-  float: left;
-}
-
-.align-right {
-  float: right;
-}
-
 .section {
   margin-bottom: $spacing-unit; 
 
@@ -38,6 +30,16 @@
   overflow: auto;
   h2,h3 {
     margin-bottom: $spacing-unit * 0.5;
+  }
+}
+
+@media (min-width: $on-laptop) {
+  .align-left {
+    float: left;
+  }
+
+  .align-right {
+    float: right;
   }
 }
 
