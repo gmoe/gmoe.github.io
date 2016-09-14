@@ -4,7 +4,7 @@ email: me@griffinmoe.com
 description: >
   Custom-made with Jekyll, hosted on GitHub.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://griffinmoe.com" # the base hostname & protocol for your site
 twitter_username: griffin_moe
 github_username:  gmoe
 
@@ -20,6 +20,15 @@ author:
     - edu1:
       school: Loyola University Chicago
       location: Chicago, IL
+      degree: MS, Computer Science
+      duration: August 2016 - Current
+      description: >
+        Currently teaching a music programming course that I created during my
+        undergraduate studies. I am also working with Loyola staff on developing a
+        full music technology curriculum.
+    - edu2:
+      school: Loyola University Chicago
+      location: Chicago, IL
       degree: BS, Computer Science
       duration: August 2012 - May 2015
       awards: [Cum laude, Grace Murray Hopper Service and Leadership Award (2015),
@@ -29,7 +38,7 @@ author:
         as well as functional programming and domain specific lanugages. I
         competed in Loyola’s ACM ICPC team from 2012 to 2014. My graduating GPA
         was 3.675.
-    - edu2:
+    - edu3:
       school: Heartland Community College
       location: Normal, IL
       degree: AS, Computer Science
@@ -42,22 +51,22 @@ author:
   workExperience:
     - work1:
       employer: Loyola University Chicago
+      location: Computer Science Dept.
+      title: Teaching Assistant
+      duration: August 2016 - Current
+      description: >
+        Teaching a digital signal processing and music course that I designed
+        and became accepted by undergraduate program. Conducting research in
+        functional programming and domain-specific languages for music
+        applications.
+    - work2:
+      employer: Loyola University Chicago
       location: Library Archives and Special Collections
       title: Student Worker
       duration: August 2013 - August 2015
       description: >
         Archival and management of university documents, rare books and
         ephemera. Digitized archive holdings for use in CONTENTdm database.
-    - work2:
-      employer: Loyola University Chicago
-      location: Computer Science Dept.
-      title: Teaching Assistant
-      duration: January 2015 - May 2015
-      description: >
-        Created a digital signal processing and music course. Taught an
-        experimental introductory computer programming course in Scala with a
-        Git and unit-testing based workflow. Conducted research in functional
-        programming and domain-specific languages for music applications.
     - work3:
       employer: Loyola University Chicago
       location: Center for Textual Studies and Digital Humanities
@@ -79,7 +88,7 @@ author:
   skills:
     - skill1:
       type: Languages
-      list: Java, C/C++, Scala, Python, Clojure, Haskell
+      list: Java, C/C++, Scala, Python, Javascript
     - skill2:
       type: Frameworks & APIs
       list: Virtual Studio Technology, Audio Units, JUCE, iPython
