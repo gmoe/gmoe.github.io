@@ -101,13 +101,13 @@
     line-height: $base-line-height;
     letter-spacing: 1px;
     font-size: 17px;
+    -webkit-transition: padding-bottom .3s, border-bottom .3s ease-in-out;
+    transition: padding-bottom .3s, border-bottom .3s ease-in-out;
 
-    // Gaps between nav items, but not on the first one
-    //&:not(:first-child) {
-    //  margin-left: 15px;
-    //}
     &:hover {
-      text-decoration: none
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.7);
+      padding-bottom: 5px;
     }
   }
 
