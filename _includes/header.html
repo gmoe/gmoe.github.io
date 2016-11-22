@@ -16,9 +16,8 @@
         </a>
 
         <div class="trigger">
-          {{ page.url | inspect }}
 
-          {% if page.url == "/index.html" %}
+          {% if page.url == "/" %}
           <div class="link-button current-link">
           {% else %}
           <div class="link-button">
@@ -30,7 +29,7 @@
 
           <span class="nav-separator"> & </span>
 
-          {% if page.url != "/index.html" %}
+          {% if page.url != "/" %}
           <div class="link-button current-link">
           {% else %}
           <div class="link-button">
