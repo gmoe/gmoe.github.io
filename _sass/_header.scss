@@ -10,7 +10,7 @@
   height: 100%;
   max-width: 375px;
 
-  background-color: #02779E;
+  background-color: $cover-background-color;
 }
 
 .site-header-wrapper {
@@ -116,7 +116,6 @@
     top: 9px;
     right: 30px;
     background-color: $background-color;
-    border: 1px solid $grey-color-light;
     border-radius: 5px;
     text-align: right;
 
@@ -129,13 +128,10 @@
       padding-top: 10px;
       text-align: center;
 
-      > svg {
+      > span {
         width: 18px;
         height: 15px;
-
-        path {
-          fill: $grey-color-dark;
-        }
+        color: $cover-background-color;
       }
     }
 
