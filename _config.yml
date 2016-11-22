@@ -2,18 +2,22 @@
 title: Griffin Moe
 email: me@griffinmoe.com
 description: >
-  Custom-made with Jekyll, hosted on GitHub.
+  I am a computer science graduate student with a passion for music, digital signal
+  processing, and functional programming. My personal research areas include
+  domain-specific languages and audio plug-in development. 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://griffinmoe.com" # the base hostname & protocol for your site
 twitter_username: griffin_moe
 github_username:  gmoe
+footer_text: >
+  Custom-made with Jekyll, hosted on GitHub. 
 
 # Build settings
 markdown: kramdown
 
 author:
   statement: >
-    I am a computer science graduate with a passion for music, digital
+    I am a computer science graduate student with a passion for music, digital
     signal processing, and functional programming. My personal research areas
     include domain-specific languages and audio plug-in development.
   education:
