@@ -10,11 +10,14 @@ url: "http://griffinmoe.com" # the base hostname & protocol for your site
 twitter_username: griffin_moe
 github_username:  gmoe
 footer_text: >
-  Custom-made with Jekyll, hosted on GitHub. 
+  Custom-made with <a href="https://jekyllrb.com/">Jekyll</a>, hosted on 
+  <a href="https://github.com/gmoe/gmoe.github.io">GitHub</a>. 
 
 # Build settings
 markdown: kramdown
+exclude: ["CNAME", "README.md"]
 
+# Resume content
 author:
   statement: >
     I am a computer science graduate student with a passion for music, digital
@@ -59,11 +62,10 @@ author:
       title: Teaching Assistant
       duration: August 2016 - Current
       description: >
-        Teaching a digital signal processing and music course that I designed
-        and became accepted by undergraduate program. Working with Loyola staff
-        on creating a full computer music curriculum. Conducting research in
-        functional programming and domain-specific languages for music
-        applications.
+        Teaching a computer music programming course that I designed for the
+        undergraduate program. Working with Loyola staff on creating a full
+        computer music curriculum. Conducting research in functional
+        programming and domain-specific languages for music applications.
     - work2:
       employer: Loyola University Chicago
       location: Library Archives and Special Collections
