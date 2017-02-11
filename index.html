@@ -5,14 +5,16 @@ title: Resumé
 
 <div class="home">
 
+  {% assign resume = site.data.resume.resume %}
+
   <div class="section" id="statementSection">
     <h1 class="section-title">Statement</h1>
-    <p class="statement">{{ site.author.statement }}</p>
+    <p class="statement">{{ resume.statement }}</p>
   </div>
 
   <div class="section" id="workExperience">
     <h1 class="section-title">Work Experience</h1>
-    {% for work in site.author.workExperience %}
+    {% for work in resume.workExperience %}
     <div class="entry">
       <div class="entry-heading">
         <h2 class="align-left">{{ work.employer }}</h2>
@@ -31,7 +33,7 @@ title: Resumé
 
   <div class="section" id="education">
     <h1 class="section-title">Education</h1>
-    {% for edu in site.author.education %}
+    {% for edu in resume.education %}
     <div class="entry">
       <div class="entry-heading">
         <h2 class="align-left">{{ edu.school }}</h2>
@@ -61,7 +63,7 @@ title: Resumé
   <div class="section" id="skills">
     <h1 class="section-title">Skills</h1>
     <ul class="skill-list">
-    {% for skill in site.author.skills %}
+    {% for skill in resume.skills %}
       <li><b>{{ skill.type }}:</b> {{ skill.list }}</li>
     {% endfor %}
     </ul>
