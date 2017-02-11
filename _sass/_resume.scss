@@ -1,3 +1,8 @@
+.statement {
+  margin-left: $spacing-unit;
+  margin-right: $spacing-unit;
+}
+
 .section-title {
   margin-bottom: $spacing-unit;
 }
@@ -20,6 +25,7 @@
 
 .entry-heading {
   clear: both;
+  overflow: hidden;
   h2,h3 {
     margin-bottom: 0;
   }
@@ -27,10 +33,13 @@
 
 .entry-subheading {
   clear: both;
-  overflow: auto;
+  overflow: hidden;
   h2,h3 {
     margin-bottom: $spacing-unit * 0.5;
   }
+}
+
+.entry-description {
 }
 
 @media (min-width: $on-laptop) {
@@ -41,9 +50,4 @@
   .align-right {
     float: right;
   }
-}
-
-.statement {
-  margin-left: $spacing-unit;
-  margin-right: $spacing-unit;
 }

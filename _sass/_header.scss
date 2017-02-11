@@ -151,6 +151,22 @@
       padding: 5px 10px;
     }
   }
+
+}
+
+@media print {
+  .trigger {
+    clear: both;
+    display: none;
+  }
+
+  .site-header-hr {
+    color: black;
+  }
+
+  .contact-buttons {
+    display: none;
+  }
 }
 
 @include media-query($on-laptop) {
