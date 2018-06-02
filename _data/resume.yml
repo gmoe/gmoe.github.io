@@ -8,7 +8,8 @@ education:
     school: Loyola University Chicago
     location: Chicago, IL
     degree: MS, Computer Science
-    duration: August 2016 - Current
+    duration: August 2016 - Present
+    current: true
     description: >
       Currently teaching a music programming course that I created during my
       undergraduate studies. I am also working with Loyola staff on developing a
@@ -37,16 +38,36 @@ education:
       Toolkit and Netboot.
 workExperience:
   - work1:
+    employer: 4C Insights
+    location: Chicago, IL
+    title: UX Engineer
+    duration: May 2018 - Present
+    current: true
+    description: >
+      Working with design team on creating a new product-wide look and feel and
+      improving user experience. Establishing style/UX engineering guidelines
+      for implementation of new products and features.
+  - work2:
+    employer: 4C Insights
+    location: Chicago, IL
+    title: Software Development Engineer
+    duration: February 2017 - May 2018
+    description: >
+      Full-stack engineer. Developed new products and features. Worked with
+      client engagement managers on addressing client issues and bugs. 
+  - work3:
     employer: Loyola University Chicago
     location: Computer Science Dept.
     title: Teaching Assistant
-    duration: August 2016 - Current
+    duration: August 2016 - May 2018
     description: >
-      Teaching a computer music programming course that I designed for the
-      undergraduate program. Working with Loyola staff on creating a full
-      computer music curriculum. Conducting research in functional
-      programming and domain-specific languages for music applications.
-  - work2:
+      Taught a computer music programming course that I designed for the
+      undergraduate program. Worked with Loyola staff on creating a full
+      computer music curriculum. Co-founded the Loyola University Technology
+      Ensemble, a mixed performance group performing new and classic pieces.
+      Conducted research in functional programming and domain-specific
+      languages for music applications.
+  - work4:
     employer: Loyola University Chicago
     location: Archives and Special Collections
     title: Student Worker
@@ -54,7 +75,7 @@ workExperience:
     description: >
       Archival and management of university documents, rare books and
       ephemera. Digitized archive holdings for use in CONTENTdm database.
-  - work3:
+  - work5:
     employer: Loyola University Chicago
     location: Digital Humanities Dept.
     title: Student Worker
@@ -63,7 +84,7 @@ workExperience:
       Developed an iOS app that can view high-resolution annotated images
       from the Loyola’s Michalak collection, containing 18th and 19th
       century British satirical broadsides.
-  - work4:
+  - work6:
     employer: Heartland Community College
     location: Technology Division Services
     title: Technician I
