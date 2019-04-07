@@ -3,44 +3,11 @@ statement: >
   I am a computer science graduate with a passion for music, digital
   signal processing, and functional programming. My personal research areas
   include audio plug-in development and domain-specific languages.
-education:
-  - edu1:
-    school: Loyola University Chicago
-    location: Chicago, IL
-    degree: MS, Computer Science
-    duration: August 2016 - May 2018
-    current: true
-    description: >
-      Currently teaching a music programming course that I created during my
-      undergraduate studies. I am also working with Loyola staff on developing a
-      full music technology curriculum.
-  - edu2:
-    school: Loyola University Chicago
-    location: Chicago, IL
-    degree: BS, Computer Science
-    duration: August 2012 - May 2015
-    awards: [Cum laude, Grace Murray Hopper Service and Leadership Award (2015),
-      Loyola University Chicago Dean’s List (2012-2015)]
-    description: >
-      I studied Computer Science as it applies to music production/composition,
-      as well as functional programming and domain specific lanugages. I
-      competed in Loyola’s ACM ICPC team from 2012 to 2014. My graduating GPA
-      was 3.675.
-  - edu3:
-    school: Heartland Community College
-    location: Normal, IL
-    degree: AS, Computer Science
-    duration: 2009 - 2012
-    description: >
-      While completing my degree, I also held an internship in Technology
-      Division Services. As Technician I, I installed and maintained a
-      deployment system for Windows and OS X using the Microsoft Deployment
-      Toolkit and Netboot.
 workExperience:
   - work1:
     employer: 4C Insights
     location: Chicago, IL
-    title: UX Engineer
+    title: Senior UX Engineer
     duration: February 2019 - Present
     current: true
     description: >
@@ -105,6 +72,39 @@ workExperience:
       Created and maintained a deployment system for Windows and OS X using
       Microsoft Deployment Toolkit and NetInstall. Offered technical support
       for students and staff.
+education:
+  - edu1:
+    school: Loyola University Chicago
+    location: Chicago, IL
+    degree: MS, Computer Science
+    duration: August 2016 - May 2018
+    current: true
+    description: >
+      Currently teaching a music programming course that I created during my
+      undergraduate studies. I am also working with Loyola staff on developing a
+      full music technology curriculum.
+  - edu2:
+    school: Loyola University Chicago
+    location: Chicago, IL
+    degree: BS, Computer Science
+    duration: August 2012 - May 2015
+    awards: [Cum laude, Grace Murray Hopper Service and Leadership Award (2015),
+      Loyola University Chicago Dean’s List (2012-2015)]
+    description: >
+      I studied Computer Science as it applies to music production/composition,
+      as well as functional programming and domain specific lanugages. I
+      competed in Loyola’s ACM ICPC team from 2012 to 2014. My graduating GPA
+      was 3.675.
+  - edu3:
+    school: Heartland Community College
+    location: Normal, IL
+    degree: AS, Computer Science
+    duration: 2009 - 2012
+    description: >
+      While completing my degree, I also held an internship in Technology
+      Division Services. As Technician I, I installed and maintained a
+      deployment system for Windows and OS X using the Microsoft Deployment
+      Toolkit and Netboot.
 skills:
   - skill1:
     type: Languages
