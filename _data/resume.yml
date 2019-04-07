@@ -8,7 +8,7 @@ education:
     school: Loyola University Chicago
     location: Chicago, IL
     degree: MS, Computer Science
-    duration: August 2016 - Present
+    duration: August 2016 - May 2018
     current: true
     description: >
       Currently teaching a music programming course that I created during my
@@ -41,13 +41,25 @@ workExperience:
     employer: 4C Insights
     location: Chicago, IL
     title: UX Engineer
-    duration: May 2018 - Present
+    duration: February 2019 - Present
+    current: true
+    description: >
+      Architect of front-end development, guiding the product transition from from
+      Ember to React.  Working directly with and giving technical guidance to the
+      design team on developing a shared UI component library.  Performing
+      accessibility and internationalization audits of current and future product
+      iterations.
+  - work2:
+    employer: 4C Insights
+    location: Chicago, IL
+    title: UX Engineer
+    duration: May 2018 - February 2019
     current: true
     description: >
       Working with design team on creating a new product-wide look and feel and
       improving user experience. Establishing style/UX engineering guidelines
       for implementation of new products and features.
-  - work2:
+  - work3:
     employer: 4C Insights
     location: Chicago, IL
     title: Software Development Engineer
@@ -55,7 +67,7 @@ workExperience:
     description: >
       Full-stack engineer. Developed new products and features. Worked with
       client engagement managers on addressing client issues and bugs. 
-  - work3:
+  - work4:
     employer: Loyola University Chicago
     location: Computer Science Dept.
     title: Teaching Assistant
@@ -67,7 +79,7 @@ workExperience:
       Ensemble, a mixed performance group performing new and classic pieces.
       Conducted research in functional programming and domain-specific
       languages for music applications.
-  - work4:
+  - work5:
     employer: Loyola University Chicago
     location: Archives and Special Collections
     title: Student Worker
@@ -75,7 +87,7 @@ workExperience:
     description: >
       Archival and management of university documents, rare books and
       ephemera. Digitized archive holdings for use in CONTENTdm database.
-  - work5:
+  - work6:
     employer: Loyola University Chicago
     location: Digital Humanities Dept.
     title: Student Worker
