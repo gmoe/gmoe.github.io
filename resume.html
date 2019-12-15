@@ -1,0 +1,85 @@
+---
+layout: default
+title: Resumé
+---
+
+<div class="home">
+
+  {% assign resume = site.data.resume %}
+
+  <div class="section" id="statementSection">
+    <h1 class="section-title">Statement</h1>
+    <p class="statement">{{ resume.statement }}</p>
+  </div>
+
+  <div class="section" id="workExperience">
+    <h1 class="section-title">Work Experience</h1>
+    {% for work in resume.workExperience %}
+    <div class="entry">
+      <div class="entry-heading">
+        <h2 class="align-left">{{ work.employer }}</h2>
+        <h3 class="align-right">{{ work.location }}</h3>
+      </div>
+
+
+      <div class="entry-subheading">
+        <h3 class="align-left">{{ work.title }}</h3>
+        <h3 class="align-right">
+          {% if work.current %}<i>{% endif %}
+          {{ work.duration }}
+          {% if work.current %}</i>{% endif %}
+        </h3>
+      </div>
+
+      <div class="entry-description">
+        <p>{{ work.description }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="section" id="education">
+    <h1 class="section-title">Education</h1>
+    {% for edu in resume.education %}
+    <div class="entry">
+      <div class="entry-heading">
+        <h2 class="align-left">{{ edu.school }}</h2>
+        <h3 class="align-right">{{ edu.location }}</h3>
+      </div>
+
+      <div class="entry-subheading">
+        <h3 class="align-left">{{ edu.degree }}</h3>
+        <h3 class="align-right">
+          {% if edu.current %}<i>{% endif %}
+          {{ edu.duration }}
+          {% if edu.current %}</i>{% endif %}
+        </h3>
+      </div>
+
+      {% if edu.awards %}
+      <b>Awards</b>
+      <ul>
+      {% for award in edu.awards %}
+        <li><span>{{ award }}</span></li>
+      {% endfor %}
+      </ul>
+      {% endif %}
+
+      <div class="entry-description">
+        <p>{{ edu.description }}</p>
+      </div>
+
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="section" id="skills">
+    <h1 class="section-title">Skills</h1>
+    <ul class="skill-list">
+    {% for skill in resume.skills %}
+      <li><b>{{ skill.type }}:</b> {{ skill.list }}</li>
+    {% endfor %}
+    </ul>
+  </div>
+
+</div>

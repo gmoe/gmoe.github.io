@@ -1,0 +1,58 @@
+header.hero {
+  display: grid;
+  margin-bottom: 40px;
+  padding: 40px 15%;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background: $red;
+  color: white;
+  font-size: 26px;
+
+  img {
+    width: 100%;
+    justify-self: center;
+  }
+
+  .title {
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 36px;
+  }
+
+  p {
+    letter-spacing: 1px;
+    line-height: 1.3;
+  }
+
+  button {
+    margin-top: 20px;
+    padding: 10px 42px;
+    background: white;
+    color: $red;
+    border-radius: 40px;
+    border: 0;
+    font-family: "Geometr706 Md BT", sans-serif;
+    font-size: inherit;
+    letter-spacing: 1px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: text-decoration 150ms ease-in;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0%;
+      margin-left: 50%;
+      height: 3px;
+      background: $red;
+      border-radius: 3px;
+      transition-property: margin-left, width;
+      transition-duration: 150ms;
+    }
+
+    &:hover::after {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
