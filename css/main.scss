@@ -3,51 +3,53 @@
 ---
 @charset "utf-8";
 
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   15px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$white: #efefef;
+$black: #221c3a;
 
-$spacing-unit:     30px;
+$red: #cc5d5d;
+$blue: #518aa2;
+$dark-blue: #4a5762;
+$yellow: #edc06b;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #41A1AE;
-//$cover-background-color: #02779E; //Default
-$cover-background-color: #41A1AE;
-//$cover-background-color: #4E8F87;
-//$cover-background-color: #A47988;
+$font-family: "Geometric706 W01", Futura, sans-serif;
+$base-font-size: 18px;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$base-spacing: 40px;
 
-$site-header-width: 30%;
-
-$content-width:    800px;
-$on-palm:          600px;
-$on-laptop:        800px;
-
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-  @media screen and (max-width: $device), print {
-    @content;
-  }
+@font-face {
+  font-family: "Geometric706 Condensed W01";
+  font-weight: 800;
+  src: url("/fonts/1120010/db584ed3-fe2a-459d-9a5e-d68d1f57c16b.woff2") format("woff2"),
+    url("/fonts/1120010/8b7bdf51-33f7-4bf9-9a1d-07811ce7c47d.woff") format("woff"),
+    url("/fonts/1120010/956c758e-04b4-4130-9269-15493fd7d07c.ttf") format("truetype");
 }
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-  "base",
-  "layout",
-  "header",
-  "footer",
-  "resume",
-  "syntax-highlighting"
-;
+@font-face {
+  font-family: "Geometric706 Condensed W01";
+  font-weight: 400;
+  src: url("/fonts/1120013/a9240e22-445b-4535-8004-088864e32e43.woff2") format("woff2"),
+    url("/fonts/1120013/cd95bc7e-c442-4d54-84a3-9e729902bc3b.woff") format("woff"),
+    url("/fonts/1120013/bf2a01be-23fa-4ba7-8990-5d635c99e8f8.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Geometric706 W01";
+  font-weight: 400;
+  src: url("/fonts/1120016/084b7298-c67e-47ad-ba0e-8185b7c9a67b.woff2") format("woff2"),
+    url("/fonts/1120016/8ec1aba7-872c-4161-b5db-139e254a67cf.woff") format("woff"),
+    url("/fonts/1120016/113a215f-d0b3-4a36-aa89-061fda75c4a3.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Geometric706 W01";
+  font-weight: 800;
+  src: url("/fonts/1120019/c3ba4203-1eba-4452-a625-a0d1f6b274b0.woff2") format("woff2"),
+    url("/fonts/1120019/73ac2689-0419-4aa9-afd7-6726e24909d8.woff") format("woff"),
+    url("/fonts/1120019/031c31fe-43e0-41c7-927e-0e2785a916b4.ttf") format("truetype");
+}
+
+@import "base";
+@import "hero";
+@import "footer";
+
+// @import "resume";
