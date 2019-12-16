@@ -1,0 +1,49 @@
+.about-me {
+  display: grid;
+  margin-bottom: $base-spacing;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'about photo' 'projects projects';
+  grid-gap: $base-spacing;
+
+  article {
+    height: 500px;
+    padding: 40px 60px;
+    grid-template-columns: 1fr 1fr;
+
+    img {
+      width: 100%;
+      align-self: center;
+      background: white;
+    }
+  }
+
+  article:nth-child(1) {
+    color: white;
+    background: $blue;
+  }
+
+  article:nth-child(2) {
+    background-image: linear-gradient(rgba($yellow, 0.5), rgba($yellow, 0.5)), url(/images/griffin-coffee.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.projects {
+  display: grid;
+  height: 500px;
+  padding: $base-spacing 15%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 400px;
+  grid-gap: $base-spacing;
+  justify-items: stretch;
+  background: $red;
+  color: white;
+
+  article {
+    background: $dark-blue;
+    color: white;
+
+    img { height: 100%; }
+  }
+}
