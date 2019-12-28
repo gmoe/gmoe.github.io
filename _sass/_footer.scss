@@ -8,9 +8,16 @@ footer {
 
   section {
     display: grid;
+    grid-auto-rows: min-content;
     grid-gap: 5px;
+    white-space: nowrap;
 
     a, a:visited {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: max-content;
+      grid-gap: 5px;
+      align-items: center;
       color: white;
     }
   }
