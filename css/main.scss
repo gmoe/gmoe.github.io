@@ -18,7 +18,8 @@ $base-spacing: 40px;
 
 @font-face {
   font-family: "Geometric706 Condensed W01";
-  font-weight: 800;
+  font-weight: bold;
+  font-style: normal;
   src: url("/fonts/1120010/db584ed3-fe2a-459d-9a5e-d68d1f57c16b.woff2") format("woff2"),
     url("/fonts/1120010/8b7bdf51-33f7-4bf9-9a1d-07811ce7c47d.woff") format("woff"),
     url("/fonts/1120010/956c758e-04b4-4130-9269-15493fd7d07c.ttf") format("truetype");
@@ -26,7 +27,8 @@ $base-spacing: 40px;
 
 @font-face {
   font-family: "Geometric706 Condensed W01";
-  font-weight: 400;
+  font-weight: normal;
+  font-style: normal;
   src: url("/fonts/1120013/a9240e22-445b-4535-8004-088864e32e43.woff2") format("woff2"),
     url("/fonts/1120013/cd95bc7e-c442-4d54-84a3-9e729902bc3b.woff") format("woff"),
     url("/fonts/1120013/bf2a01be-23fa-4ba7-8990-5d635c99e8f8.ttf") format("truetype");
@@ -34,7 +36,8 @@ $base-spacing: 40px;
 
 @font-face {
   font-family: "Geometric706 W01";
-  font-weight: 400;
+  font-weight: normal;
+  font-style: normal;
   src: url("/fonts/1120016/084b7298-c67e-47ad-ba0e-8185b7c9a67b.woff2") format("woff2"),
     url("/fonts/1120016/8ec1aba7-872c-4161-b5db-139e254a67cf.woff") format("woff"),
     url("/fonts/1120016/113a215f-d0b3-4a36-aa89-061fda75c4a3.ttf") format("truetype");
@@ -42,13 +45,24 @@ $base-spacing: 40px;
 
 @font-face {
   font-family: "Geometric706 W01";
-  font-weight: 800;
+  font-weight: bold;
+  font-style: normal;
   src: url("/fonts/1120019/c3ba4203-1eba-4452-a625-a0d1f6b274b0.woff2") format("woff2"),
     url("/fonts/1120019/73ac2689-0419-4aa9-afd7-6726e24909d8.woff") format("woff"),
     url("/fonts/1120019/031c31fe-43e0-41c7-927e-0e2785a916b4.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "icons";
+  font-weight: normal;
+  font-style: normal;
+  src: url("/fonts/icons/icomoon.woff") format("woff"),
+    url("/fonts/icons/icomoon.svg?afpkju#icomoon") format("svg"),
+    url("/fonts/icons/icomoon.ttf") format("truetype");
+}
+
 @import "base";
+@import "icons";
 @import "hero";
 @import "layout";
 @import "footer";
