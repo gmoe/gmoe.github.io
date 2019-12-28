@@ -15,12 +15,97 @@ title: Hello!
         sit cum minima id facere. Voluptas qui unde possimus aut veniam
         blanditiis dignissimos aperiam.
       </p>
+      <p>
+        <span>I currently work in the industry as a UI/UX engineer at</span>
+        <a href="https://www.4cinsights.com/">4C Insights</a>
+        <span>
+          identifying and solving UX issues. That means working closely with our
+          design team on maintaining an internal component library that drives
+          our product. I also have enough design and illustration chops to get
+          things done.
+        </span>
+      </p>
     </article>
     <article></article>
   </section>
+
   <section class="projects">
-    <article>VODER</article>
-    <article>LUTE</article>
-    <article>Other Projects</article>
+    <h2>Projects</h2>
+    <article>
+      <a href="{{ "/voder" | prepend: site.url }}">
+        <img
+          src="/images/voder-logo-opt.svg"
+          alt="Logo of the VODER project"
+        >
+        <div>
+          <h3>VODER</h3>
+          <div>A human exploration of<br/>early speech synthesis</div>
+        </div>
+      </a>
+    </article>
+    <article>
+      <a href="https://lute.luc.edu/">
+        <img
+          src="/images/luc-logo-opt.svg"
+          alt="Crest of Loyola University Chicago"
+        >
+        <div>
+          <h3>LUTE</h3>
+          <div>Not your average</br>laptop ensemble</div>
+        </div>
+      </a>
+    </article>
+    <article>
+      <!-- TODO: Either link to GitHub or enumerate on the site -->
+      <a href="#">
+        <img
+          src="/images/chemex-opt.svg"
+          alt="An illustration of a Chemex coffee brewer"
+        >
+        <div>
+          <h3>Other Projects</h3>
+          <div>I do other stuff too!</div>
+        </div>
+      </a>
+    </article>
+  </section>
+
+  <section class="music">
+    <article>
+      <h2>Links</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/{{ site.github_username }}">
+            <span class="icon github"></span>
+            <span class="link-content">GitHub</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/{{ site.twitter_username }}">
+            <span class="icon twitter"></span>
+            <span class="link-content">Twitter</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:{{ site.email }}">
+            <span class="icon email"></span>
+            <span class="link-content">Email</span>
+          </a>
+        </li>
+        <li>
+          <!-- Either include resume PDF or rebuild -->
+          <a href="/assets/TODOOOOOOOOOOO">
+            <span class="icon document"></span>
+            <span class="link-content">Resume (PDF)</span>
+          </a>
+        </li>
+      </ul>
+    </article>
+    <article>
+      <p>
+        I'm actually releasing some of my music in 2020, watch this space!
+      </p>
+      <span class="icon coffee"></span>
+    </article>
   </section>
 </main>

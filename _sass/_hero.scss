@@ -38,7 +38,7 @@ header.hero {
     letter-spacing: 1px;
     font-weight: 800;
     cursor: pointer;
-    transition: text-decoration 150ms ease-in;
+    transition: text-decoration $global-timing ease-in;
 
     &::after {
       content: '';

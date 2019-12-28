@@ -11,10 +11,24 @@ $blue: #518aa2;
 $dark-blue: #4a5762;
 $yellow: #edc06b;
 
+:root {
+  --white: #{$white};
+  --black: #{$black};
+
+  --red: #{$red};
+  --blue: #{$blue};
+  --dark-blue: #{$dark-blue};
+  --yellow: #{$yellow};
+}
+
 $font-family: "Geometric706 W01", Futura, sans-serif;
 $base-font-size: 18px;
 
 $base-spacing: 40px;
+
+// Animates everything relative to this value
+// Also makes it easier to omit animations for motion sickness
+$global-timing: 150ms;
 
 @font-face {
   font-family: "Geometric706 Condensed W01";

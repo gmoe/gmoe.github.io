@@ -1,6 +1,9 @@
+.no-wrap {
+  white-space: nowrap;
+}
+
 .about-me {
   display: grid;
-  margin-bottom: $base-spacing;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 'about photo' 'projects projects';
   grid-gap: $base-spacing;
@@ -17,6 +20,10 @@
     }
   }
 
+  p a {
+    white-space: nowrap;
+  }
+
   article:nth-child(1) {
     color: white;
     background: $blue;
@@ -31,19 +38,110 @@
 
 .projects {
   display: grid;
-  height: 500px;
+  // height: 500px;
+  margin-bottom: $base-spacing;
   padding: $base-spacing 15%;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 400px;
-  grid-gap: $base-spacing;
+  grid-template-areas: 'title title title';
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-template-rows: min-content 400px;
+  grid-column-gap: $base-spacing;
   justify-items: stretch;
   background: $red;
   color: white;
 
-  article {
+  h2 {
+    grid-area: title;
+    margin-top: 0;
+  }
+
+  article a {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 6fr minmax(150px, 1fr);
+    grid-row-gap: 20px;
+    outline-offset: 0;
+    outline: 1px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+    background: white;
+    color: $red;
+    transition-property: outline-offset, outline-color;
+    transition-duration: $global-timing;
+    transition-timing-function: ease-in;
+
+    &:hover,
+    &:focus {
+      outline-color: white;
+      outline-offset: 15px;
+    }
+
+    img {
+      display: inline-block;
+      height: 100%;
+      margin: 10px;
+      padding: 10px;
+      justify-self: center;
+      object-fit: contain;
+    }
+
+    > div { // TODO: class instead
+      padding-top: 10px;
+      // border-top: 3px solid $red;
+      background: $dark-blue;
+      color: white;
+
+      div, h3 { text-align: center; }
+      h3 {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.music {
+  display: grid;
+  margin-bottom: $base-spacing;
+  grid-template-columns: 1.5fr 4fr;
+  grid-template-rows: 300px;
+  grid-column-gap: $base-spacing;
+
+  article:nth-child(1) {
+    padding: 20px 40px;
+    background: $blue;
+    color: white;
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+
+      li + li { margin-top: 10px; }
+
+      a {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 30px min-content;
+        grid-gap: 10px;
+        align-items: center;
+        justify-items: center;
+        text-decoration: none;
+
+        .icon { font-size: 1.75rem; }
+        .link-content { text-decoration: underline; }
+      }
+    }
+  }
+
+  article:nth-child(2) {
+    display: grid;
+    justify-items: center;
+    align-content: center;
     background: $dark-blue;
     color: white;
 
-    img { height: 100%; }
+    .icon {
+      font-size: 5rem;
+    }
   }
 }
