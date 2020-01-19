@@ -1,13 +1,26 @@
 # Site settings
 title: Griffin Moe
 email: me@griffinmoe.com
+tagline: > # duped for SEO
+  I'm a software engineer experimenting in the intersection of computers and
+  music on the web and in your DAW.
 description: >
   I'm a software engineer experimenting in the intersection of computers and
   music on the web and in your DAW.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://griffinmoe.com" # the base hostname & protocol for your site
-twitter_username: griffin_moe
-github_username:  gmoe
+
+# SEO stuff
+author: griffin_moe
+twitter:
+  username: griffin_moe
+  card: summary
+github_username: gmoe # using above struct breaks gh-pages
+social:
+  name: Griffin Moe
+  links:
+    - https://twitter.com/griffin_moe
+    - https://github.com/gmoe
 
 # Build settings
 markdown: kramdown
