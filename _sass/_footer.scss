@@ -17,8 +17,11 @@ footer {
       grid-auto-flow: column;
       grid-auto-columns: max-content;
       grid-gap: 5px;
-      align-items: center;
+      align-items: end;
       color: white;
+      text-decoration: none;
+
+      span:nth-child(2) { text-decoration: underline; }
     }
   }
 }
