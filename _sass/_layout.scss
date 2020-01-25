@@ -30,7 +30,8 @@
   }
 
   article:nth-child(2) {
-    background-image: linear-gradient(rgba($yellow, 0.5), rgba($yellow, 0.5)), url(/images/griffin-coffee.jpg);
+    background-color: $yellow;
+    background-image: linear-gradient(rgba($yellow, 0.5), rgba($yellow, 0.5)), url(/images/modular.png);
     background-size: cover;
     background-position: center;
   }
