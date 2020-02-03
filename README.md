@@ -1,4 +1,4 @@
-# README
+# griffinmoe.com
 
 This is the Jekyll project for my personal website and resumé.
 
@@ -14,7 +14,7 @@ bundle exec jekyll serve
 
 ----
 
-Copyright Griffin Moe © 2019
+Copyright Griffin Moe © 2020
 
 [b]: https://bundler.io/
 [j]: https://jekyllrb.com/
