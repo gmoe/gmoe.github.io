@@ -52,7 +52,8 @@ header.hero {
       transition-duration: 150ms;
     }
 
-    &:hover::after {
+    &:hover::after,
+    &:focus::after {
       width: 100%;
       margin-left: 0;
     }

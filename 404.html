@@ -1,0 +1,39 @@
+---
+title: Roland TB-404
+permalink: /404.html
+---
+
+<!DOCTYPE html>
+<html class="four-oh-four">
+  {% include head.html %}
+  <body>
+    <img
+      src="/images/super-synth.svg"
+      alt="An isometric illustration of a musical instrument."
+    >
+    <main>
+      <h1>TB-404</h1>
+      <p>
+        What you were looking for is not available or has moved.
+        These things happen, maybe check the URL for spelling and
+        capitalization?
+      </p>
+      <a class="button" href="/">
+        Go Home
+      </a>
+      <button
+        id="back-button"
+        style="display: none;"
+        class="button secondary"
+        onclick="window.history.back()"
+      >
+        Go Back
+      </button>
+    </main>
+  </body>
+  <script>
+    if (window.history.length > 1) {
+      document.getElementById('back-button').style = '';
+    }
+  </script>
+</html>

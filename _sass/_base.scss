@@ -22,10 +22,65 @@ ul li {
 }
 
 a, a:visited {
+  border-bottom: 2px solid white;
   white-space: nowrap;
   color: white;
-  transition: color ($global-timing / 2) ease-in;
+  text-decoration: none;
+  transition: border-color ($global-timing / 2) ease-in;
 
-  &:hover { color: mix(white, $red, 25%); }
-  &:focus { color: mix(white, $red, 50%); }
+  &:hover,
+  &:focus { border-color: $red; }
+}
+
+button,
+.button {
+  display: inline-block;
+  padding: 10px 42px;
+  background: white;
+  color: $red;
+  border-radius: 40px;
+  border: 0;
+  font-family: "Geometr706 Md BT", sans-serif;
+  font-size: inherit;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: text-decoration $global-timing ease-in;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 0%;
+    margin-left: 50%;
+    height: 3px;
+    background: $red;
+    border-radius: 3px;
+    transition-property: margin-left, width;
+    transition-duration: 150ms;
+  }
+
+  &:hover,
+  &:focus {
+    color: $red;
+
+    &::after {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  &:visited,
+  &:visited:hover {
+    color: $red;
+  }
+
+  &.secondary {
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+
+    &::after { background: white; }
+    &:hover { color: white; }
+  }
 }
