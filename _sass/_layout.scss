@@ -37,74 +37,54 @@
   }
 }
 
-.projects {
+.project {
   display: grid;
-  // height: 500px;
+  grid-template-rows: 300px;
   margin-bottom: $base-spacing;
-  padding: $base-spacing 15%;
-  grid-template-areas: 'title title title';
-  grid-template-columns: repeat(3, minmax(300px, 1fr));
-  grid-template-rows: min-content 400px;
-  grid-column-gap: $base-spacing;
-  justify-items: stretch;
-  background: $red;
-  color: white;
+  grid-gap: $base-spacing;
 
-  h2 {
-    grid-area: title;
-    margin-top: 0;
+
+  &:nth-child(odd) {
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 'info image';
+
+    article { background: $blue; }
+    .button {
+      color: $blue;
+
+      &::after { background: $blue; }
+    }
   }
 
-  article a {
-    display: grid;
-    width: 100%;
+  &:nth-child(even) {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 'image info';
+
+    article { background: $red; }
+  }
+
+  & + & { margin-top: $base-spacing; }
+
+  img {
+    grid-area: image;
     height: 100%;
-    grid-template-rows: 6fr minmax(150px, 1fr);
-    grid-row-gap: 20px;
-    outline-offset: 0;
-    outline: 1px solid transparent;
-    cursor: pointer;
-    text-decoration: none;
-    background: white;
-    color: $red;
-    transition-property: outline-offset, outline-color;
-    transition-duration: $global-timing;
-    transition-timing-function: ease-in;
+    // object-fit: contain;
+    align-self: center;
+    justify-self: center;
+  }
 
-    &:hover,
-    &:focus {
-      outline-color: white;
-      outline-offset: 15px;
-    }
-
-    img {
-      display: inline-block;
-      height: 100%;
-      margin: 10px;
-      padding: 10px;
-      justify-self: center;
-      object-fit: contain;
-    }
-
-    > div { // TODO: class instead
-      padding-top: 10px;
-      // border-top: 3px solid $red;
-      background: $dark-blue;
-      color: white;
-
-      div, h3 { text-align: center; }
-      h3 {
-        width: 100%;
-        margin-bottom: 10px;
-      }
-    }
+  article {
+    grid-area: info;
+    padding: 20px 40px;
+    background-color: $red;
+    color: white;
   }
 }
 
 .music {
   display: grid;
   margin-bottom: $base-spacing;
-  grid-template-columns: 1.5fr 4fr;
+  grid-template-columns: 1fr 3fr;
   grid-template-rows: 300px;
   grid-column-gap: $base-spacing;
 

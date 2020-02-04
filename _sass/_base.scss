@@ -46,7 +46,6 @@ button,
   letter-spacing: 1px;
   font-weight: 800;
   cursor: pointer;
-  transition: text-decoration $global-timing ease-in;
 
   &::after {
     content: '';
