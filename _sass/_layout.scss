@@ -41,7 +41,7 @@
   display: grid;
   grid-template-rows: 300px;
   margin-bottom: $base-spacing;
-  grid-gap: $base-spacing;
+  // grid-gap: $base-spacing;
 
 
   &:nth-child(odd) {
@@ -49,8 +49,14 @@
     grid-template-areas: 'info image';
 
     article { background: $blue; }
+    img { border-color: $blue; }
     .button {
       color: $blue;
+
+      &.secondary {
+        color: white;
+        &::after { background: white; }
+      }
 
       &::after { background: $blue; }
     }
@@ -61,6 +67,7 @@
     grid-template-areas: 'image info';
 
     article { background: $red; }
+    img { border-color: $red; }
   }
 
   & + & { margin-top: $base-spacing; }
@@ -68,9 +75,11 @@
   img {
     grid-area: image;
     height: 100%;
-    // object-fit: contain;
-    align-self: center;
-    justify-self: center;
+    padding: 20px;
+    object-fit: contain;
+    align-self: stretch;
+    justify-self: stretch;
+    border: 5px solid;
   }
 
   article {
@@ -78,6 +87,8 @@
     padding: 20px 40px;
     background-color: $red;
     color: white;
+
+    a + a { margin-left: 5px; }
   }
 }
 
@@ -90,8 +101,8 @@
 
   article:nth-child(1) {
     padding: 20px 40px;
-    background: $blue;
-    color: white;
+    background: $yellow;
+    color: $black;
 
     ul {
       padding-left: 0;
@@ -104,25 +115,32 @@
         grid-auto-flow: column;
         grid-template-columns: 30px min-content;
         grid-gap: 10px;
-        align-items: center;
+        align-items: end;
         justify-items: center;
         text-decoration: none;
+        border: none;
+        color: $black;
+
+        &:hover .link-content { border-bottom-color: $red; }
 
         .icon { font-size: 1.75rem; }
-        .link-content { text-decoration: underline; }
+        .link-content {
+          border-bottom: 2px solid $black;
+          transition: border-bottom-color $global-timing ease;
+        }
       }
     }
   }
 
   article:nth-child(2) {
-    display: grid;
-    justify-items: center;
-    align-content: center;
-    background: $dark-blue;
+    padding: 20px 40px;
+    background: $blue;
     color: white;
 
-    .icon {
-      font-size: 5rem;
+    .button {
+      color: $blue;
+
+      &::after { background: $blue; }
     }
   }
 }

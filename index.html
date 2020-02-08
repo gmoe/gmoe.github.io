@@ -20,10 +20,10 @@ title: Hello!
         <span>I currently work in the industry as a UI/UX engineer at</span>
         <a href="https://www.4cinsights.com/">4C Insights</a>
         <span>
-          identifying and solving UX problems, establishing best practices, and
-          working with our design team on maintaining an internal component
-          library that drives our product. I also have enough design and
-          illustration chops to get things done.
+          identifying and solving UX problems, establishing best engineering
+          and A11Y practices, and collaborating with our design team on the
+          component library that drives our product. I also have some design
+          and illustration chops!
         </span>
       </p>
     </article>
@@ -31,57 +31,61 @@ title: Hello!
   </section>
 
   <section class="project">
+    <article>
+      <h2>VODER</h2>
+      <p>
+        The VODER was an early form of speech synthesis designed by Bell Labs and demonstrated
+        at the 1939 New York World's Fair. Requiring a human operator, Helen Harper was the first
+        person to learn how to play it. Put yourself in her shoes and try to operate this simulation
+        of the original console.
+      </p>
+      <a class="button" href="{{ "/voder" | prepend: site.url }}">Check it out</a>
+      <a class="button secondary" href="{{ "/voder" | prepend: site.url }}">Read more</a>
+    </article>
     <img
       src="/images/voder-logo-opt.svg"
       alt="Logo of the VODER project"
       >
-    <article>
-      <h2>VODER</h2>
-      <p>
-        A human exploration of early speech synthesis. Eveniet est qui et
-        ullam. Adipisci repellat soluta natus unde fugit qui qui. Quos vitae
-        asperiores recusandae eum quam voluptas. Aut deserunt adipisci ipsam
-        assumenda laboriosam explicabo deleniti quaerat. Nobis sint ipsam dicta
-        modi est id velit.
-      </p>
-      <a class="button" href="{{ "/voder" | prepend: site.url }}">Check it out</a>
-    </article>
   </section>
 
   <section class="project">
+    <article>
+      <h2>Loyola University Technology Ensemble</h2>
+      <p>
+        Founded as part of a computer music class I created and taught between
+        my undergraduate and graduate studies, LUTE is a technology ensemble
+        dedicated to accessibility and music education. We are best known for
+        our performances of Terry Riley's 1964 classic <i>In C</i>.  Come see
+        and perform with us!
+      </p>
+      <a class="button" href="https://lute.luc.edu/">Check it out</a>
+      <a class="button secondary" href="https://lute.luc.edu/">Read more</a>
+    </article>
     <img
       src="/images/luc-logo-opt.svg"
       alt="Crest of Loyola University Chicago"
     >
-    <article>
-      <h2>LUTE</h2>
-      <p>
-        Eveniet est qui et ullam. Adipisci repellat soluta natus unde fugit qui
-        qui. Quos vitae asperiores recusandae eum quam voluptas. Aut deserunt
-        adipisci ipsam assumenda laboriosam explicabo deleniti quaerat. Nobis
-        sint ipsam dicta modi est id velit. Aut dignissimos nihil est similique
-        tempora quidem sit consequatur.
-      </p>
-      <a class="button" href="https://lute.luc.edu/">Check it out</a>
-    </article>
   </section>
 
   <section class="project">
-    <img
-      src="/images/chemex-opt.svg"
-      alt="An illustration of a Chemex coffee brewer"
-    >
     <article>
       <h2>Other Projects</h2>
       <p>
-        Eveniet est qui et ullam. Adipisci repellat soluta natus unde fugit qui
-        qui. Quos vitae asperiores recusandae eum quam voluptas. Aut deserunt
-        adipisci ipsam assumenda laboriosam explicabo deleniti quaerat. Nobis
-        sint ipsam dicta modi est id velit. Aut dignissimos nihil est similique
-        tempora quidem sit consequatur.
+        I am always working on something, whether its music, music software, or
+        making plugins for my tmux &amp; Vim development environment. Click the
+        link below to see some of my other open source projects as well as what
+        I'm currently working on. Some of my project summaries and portfolio work
+        are below as well.
       </p>
-      <a class="button" href="https://github.com/{{ site.github_username }}">Check it out</a>
+      <a class="button" href="https://github.com/{{ site.github_username }}">
+        <span class="icon github"></span>
+        <span>Check it out</span>
+      </a>
     </article>
+    <img
+      src="/images/chemex-anim.svg"
+      alt="An illustration of a Chemex coffee brewer"
+    >
   </section>
 
   <section class="music">
@@ -91,19 +95,19 @@ title: Hello!
         <li>
           <a href="https://github.com/{{ site.github_username }}">
             <span class="icon github"></span>
-            <span class="link-content">GitHub</span>
+            <span class="link-content">@gmoe</span>
           </a>
         </li>
         <li>
           <a href="https://twitter.com/{{ site.twitter.username }}">
             <span class="icon twitter"></span>
-            <span class="link-content">Twitter</span>
+            <span class="link-content">@griffin_moe</span>
           </a>
         </li>
         <li>
           <a href="mailto:{{ site.email }}">
             <span class="icon email"></span>
-            <span class="link-content">Email</span>
+            <span class="link-content">me@griffinmoe.com</span>
           </a>
         </li>
         <li>
@@ -116,10 +120,16 @@ title: Hello!
       </ul>
     </article>
     <article>
-      <p>
-        I'm actually releasing some of my music in 2020, watch this space!
-      </p>
-      <span class="icon coffee"></span>
+      <h2>Writings</h2>
+      <ul class="post-list">
+        {% for post in site.posts limit:3 %}
+        <li>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <span class="post-meta"> – {{ post.date | date: "%b %-d, %Y" }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+      <a class="button" href="#">See more</a>
     </article>
   </section>
 </main>

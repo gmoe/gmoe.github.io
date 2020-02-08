@@ -20,8 +20,16 @@ footer {
       align-items: end;
       color: white;
       text-decoration: none;
+      border: none;
 
-      span:nth-child(2) { text-decoration: underline; }
+      &:hover span:nth-child(2) {
+        border-bottom-color: $red;
+      }
+
+      span:nth-child(2) {
+        border-bottom: 2px solid white;
+        transition: border-bottom-color $global-timing ease;
+      }
     }
   }
 }
