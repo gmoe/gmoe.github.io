@@ -1,16 +1,25 @@
 .icon {
-  // Use !important to prevent issues with browser extensions that change fonts
-  font-family: 'icons' !important;
+  display: inline-block;
   speak: none;
   user-select: none;
+  // Use !important to prevent issues with browser extensions that change fonts
+  font-family: 'icons' !important;
+  direction: ltr;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
+  font-variant-ligatures: normal;
   text-transform: none;
   text-decoration: none;
+  letter-spacing: normal;
   line-height: 1;
+  white-space: nowrap;
+  word-wrap: normal;
+  text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-backface-visibility: hidden;
+
 
   &.coffee::before { content: "\e904"; }
   &.document::before { content: "\e900"; }
