@@ -90,30 +90,45 @@ title: Hello!
 
   <section class="music">
     <article>
-      <h2>Links</h2>
-      <ul>
+      <h2 aria-label="Quick" id="quick-link-label">Links</h2>
+      <ul aria-labelledby="quick-link-label">
         <li>
           <a href="https://github.com/{{ site.github_username }}">
-            <span class="icon github"></span>
-            <span class="link-content">@gmoe</span>
+            <span class="icon github" aria-hidden="true"></span>
+            <span
+              class="link-content"
+              aria-label="Github Handle: @{{ site.github_username }}"
+            >
+            @{{site.github_username}}
+            </span>
           </a>
         </li>
         <li>
           <a href="https://twitter.com/{{ site.twitter.username }}">
-            <span class="icon twitter"></span>
-            <span class="link-content">@griffin_moe</span>
+            <span class="icon twitter" aria-hidden="true"></span>
+            <span
+              class="link-content"
+              aria-label="Twitter Handle: @{{ site.twitter.username }}"
+            >
+              @{{ site.twitter.username }}
+            </span>
           </a>
         </li>
         <li>
           <a href="mailto:{{ site.email }}">
-            <span class="icon email"></span>
-            <span class="link-content">me@griffinmoe.com</span>
+            <span class="icon email" aria-hidden="true"></span>
+            <span
+              class="link-content"
+              aria-label="Email address: @{{ site.email }}"
+            >
+              {{ site.email }}
+            </span>
           </a>
         </li>
         <li>
           <!-- Either include resume PDF or rebuild -->
           <a href="/assets/TODOOOOOOOOOOO">
-            <span class="icon document"></span>
+            <span class="icon document" aria-hidden="true"></span>
             <span class="link-content">Resume (PDF)</span>
           </a>
         </li>
