@@ -9,6 +9,7 @@ description: >
   music on the web and in your DAW.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://griffinmoe.com" # the base hostname & protocol for your site
+permalink: /posts/:year/:month/:day/:title
 
 # SEO stuff
 author: griffin_moe
