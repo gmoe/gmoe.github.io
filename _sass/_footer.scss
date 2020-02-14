@@ -1,8 +1,8 @@
 footer {
   display: grid;
-  padding: 40px 15%;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  padding: 40px 60px;
+  grid-template-columns: min-content min-content min-content;
+  grid-gap: 5%;
   background: $dark-blue;
   color: white;
 
@@ -12,15 +12,51 @@ footer {
     grid-gap: 5px;
     white-space: nowrap;
 
+    .logo {
+      display: grid;
+      width: 80px;
+      height: 80px;
+      justify-content: center;
+      align-content: center;
+      background: $red;
+      font-size: 30px;
+      font-weight: bold;
+      outline: 1px solid transparent;
+
+      transition-property: outline-color, outline-offset;
+      transition-duration: $global-timing;
+
+      &:focus,
+      &:hover {
+        outline-color: white;
+        outline-offset: 5px;
+      }
+    }
+
+    .copyright { text-align: right; }
+
+    .footer-label {
+      font-weight: bold;
+      line-height: 1;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
     a, a:visited {
       display: grid;
       grid-auto-flow: column;
       grid-auto-columns: max-content;
-      grid-gap: 5px;
-      align-items: end;
+      grid-gap: 10px;
+      align-items: center;
       color: white;
       text-decoration: none;
       border: none;
+
+      .icon { font-size: 22px; }
 
       &:hover span:nth-child(2) {
         border-bottom-color: $red;
@@ -28,6 +64,7 @@ footer {
 
       span:nth-child(2) {
         border-bottom: 2px solid white;
+        padding-bottom: 2px;
         transition: border-bottom-color $global-timing ease;
       }
     }

@@ -1,26 +1,51 @@
-<footer>
+<footer aria-label="Footer">
   <section>
-    <a href="/">
-      <span class="icon coffee"></span>
-      <span>Griffin Moe</span>
-    </a>
-    <a href="mailto:{{ site.email }}">
-      <span class="icon email"></span>
-      <span>{{ site.email }}</span>
-    </a>
+    <a class="logo" href="/" aria-label="Go back home">GM</a>
+    <div class="copyright">© {{ site.time | date: "%Y" }}</div>
   </section>
   <section>
-    <a href="https://github.com/{{ site.github_username }}">
-      <span class="icon github"></span>
-      <span class="username">{{ site.github_username }}</span>
-    </a>
+    <div class="footer-label" id="footer-contact-label">Contact</div>
+    <ul aria-labelledby="footer-contact-label">
+      <li>
+        <a href="/">
+          <span class="icon coffee" aria-hidden="true"></span>
+          <span>Griffin Moe</span>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:{{ site.email }}">
+          <span class="icon email" aria-hidden="true"></span>
+          <span aria-label="Email: {{ site.email }}">{{ site.email }}</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <div class="footer-label" id="footer-social-label">Social</div>
+    <ul aria-labelledby="footer-social-label">
+      <li>
+        <a href="https://github.com/{{ site.github_username }}">
+          <span class="icon github" aria-hidden="true"></span>
+          <span
+            class="username"
+            aria-label="Github: {{ site.github_username }}"
+          >
+            {{ site.github_username }}
+          </span>
+        </a>
+      </li>
 
-    <a href="https://twitter.com/{{ site.twitter.username }}">
-      <span class="icon twitter"></span>
-      <span class="username">{{ site.twitter.username }}</span>
-    </a>
-  </section>
-  <section>
-    © {{ site.time | date: "%Y" }}
+      <li>
+        <a href="https://twitter.com/{{ site.twitter.username }}">
+          <span class="icon twitter" aria-hidden="true"></span>
+          <span
+            class="username"
+            aria-label="Twitter: {{ site.twitter.username }}"
+          >
+            {{ site.twitter.username }}
+          </span>
+        </a>
+      </li>
+    </ul>
   </section>
 </footer>
