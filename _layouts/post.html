@@ -4,9 +4,21 @@ layout: default
 <div class="post">
 
   <header class="post-header">
-    <h1 class="section-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <div>
+      <h1>
+        <a href="/">Griffin Moe</a>
+      </h1>
+      <h2 class="section-title">{{ page.title }}</h2>
+      <p class="post-meta">
+        {{ page.date | date: "%b %-d, %Y" }}{% if page.meta %} • {{ page.meta }}{% endif %}
+      </p>
+    </div>
+    <img
+      src="/images/super-synth.svg"
+      alt="An isometric illustration of a musical instrument."
+    >
   </header>
+
 
   <article class="post-content">
     {{ content }}

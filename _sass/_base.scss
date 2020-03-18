@@ -10,15 +10,28 @@ html {
 body {
   max-width: 1600px;
   margin: 0;
-  padding: $base-spacing;
+  padding: var(--base-spacing);
   font-family: $font-family;
   font-size: $base-font-size;
   -webkit-text-size-adjust: 100%;
 }
 
-p,
-ul li {
+h2 {
+  margin-top: 10px;
+}
+
+p {
   line-height: 1.7;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+
+  li {
+    line-height: 1.7;
+    list-style-position: inside;
+  }
 }
 
 a, a:visited {
@@ -30,6 +43,14 @@ a, a:visited {
 
   &:hover,
   &:focus { border-color: $red; }
+
+  .post & {
+    color: black;
+    border-color: black;
+
+    &:hover,
+    &:focus { border-color: $red; }
+  }
 }
 
 button,
@@ -46,6 +67,7 @@ button,
   letter-spacing: 1px;
   font-weight: 800;
   cursor: pointer;
+  transition: text-decoration $global-timing ease-in;
 
   &::after {
     content: '';
@@ -80,14 +102,6 @@ button,
     color: white;
 
     &::after { background: white; }
-    &:hover {
-      color: white;
-      border-color: white;
-    }
-  }
-
-  .icon {
-    font-size: 1.5rem;
-    vertical-align: text-top;
+    &:hover { color: white; }
   }
 }

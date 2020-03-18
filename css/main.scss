@@ -12,6 +12,8 @@ $dark-blue: #4a5762;
 $yellow: #edc06b;
 
 :root {
+  --base-spacing: 40px;
+
   --white: #{$white};
   --black: #{$black};
 
@@ -21,10 +23,14 @@ $yellow: #edc06b;
   --yellow: #{$yellow};
 }
 
+@media screen and (max-width: 850px) {
+  :root {
+    --base-spacing: 0;
+  }
+}
+
 $font-family: "Geometric706 W01", Futura, sans-serif;
 $base-font-size: 18px;
-
-$base-spacing: 40px;
 
 // Animates everything relative to this value
 // Also makes it easier to omit animations for motion sickness
@@ -79,6 +85,8 @@ $global-timing: 150ms;
 @import "icons";
 @import "hero";
 @import "layout";
+@import "post";
+@import "postlist";
 @import "footer";
 @import "404";
 

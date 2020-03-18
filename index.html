@@ -7,7 +7,7 @@ title: Hello!
 
 <main>
   <section class="about-me">
-    <article>
+    <article class="bio">
       <h2>About Me</h2>
       <p>
         Sound is my deepest passion, it has driven everything I've done. It
@@ -17,20 +17,19 @@ title: Hello!
         ensemble with a focus on accessibility.
       </p>
       <p>
-        <span>I currently work in the industry as a UI/UX engineer at</span>
+        <span>I currently work as a UI/UX engineer at</span>
         <a href="https://www.4cinsights.com/">4C Insights</a>
         <span>
           identifying and solving UX problems, establishing best engineering
           and A11Y practices, and collaborating with our design team on the
-          component library that drives our product. I also have some design
-          and illustration chops!
+          component library that drives our product.
         </span>
       </p>
     </article>
-    <article></article>
+    <article class="cover-image"></article>
   </section>
 
-  <section class="project">
+  <section class="project primary">
     <article>
       <h2>VODER</h2>
       <p>
@@ -42,13 +41,15 @@ title: Hello!
       <a class="button" href="{{ "/voder" | prepend: site.url }}">Check it out</a>
       <a class="button secondary" href="{{ "/voder" | prepend: site.url }}">Read more</a>
     </article>
-    <img
-      src="/images/voder-logo-opt.svg"
-      alt="Logo of the VODER project"
-      >
+    <div class="img-container">
+      <img
+        src="/images/voder-logo-opt.svg"
+        alt="Logo of the VODER project"
+        >
+    </div>
   </section>
 
-  <section class="project">
+  <section class="project secondary">
     <article>
       <h2>Loyola University Technology Ensemble</h2>
       <p>
@@ -61,13 +62,15 @@ title: Hello!
       <a class="button" href="https://lute.luc.edu/">Check it out</a>
       <a class="button secondary" href="https://lute.luc.edu/">Read more</a>
     </article>
-    <img
-      src="/images/luc-logo-opt.svg"
-      alt="Crest of Loyola University Chicago"
-    >
+    <div class="img-container">
+      <img
+        src="/images/luc-logo-opt.svg"
+        alt="Crest of Loyola University Chicago"
+      >
+    </div>
   </section>
 
-  <section class="project">
+  <section class="project primary">
     <article>
       <h2>Other Projects</h2>
       <p>
@@ -82,14 +85,16 @@ title: Hello!
         <span>Check it out</span>
       </a>
     </article>
-    <img
-      src="/images/chemex-anim.svg"
-      alt="An illustration of a Chemex coffee brewer"
-    >
+    <div class="img-container">
+      <img
+        src="/images/chemex-anim.svg"
+        alt="An illustration of a Chemex coffee brewer"
+      >
+    </div>
   </section>
 
-  <section class="music">
-    <article>
+  <section class="extras">
+    <article class="quick-links">
       <h2 aria-label="Quick" id="quick-link-label">Links</h2>
       <ul aria-labelledby="quick-link-label">
         <li>
@@ -134,9 +139,9 @@ title: Hello!
         </li>
       </ul>
     </article>
-    <article>
+    <article class="writings-list">
       <h2>Writings</h2>
-      <ul class="post-list">
+      <ul>
         {% for post in site.posts limit:3 %}
         <li>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -144,7 +149,7 @@ title: Hello!
         </li>
         {% endfor %}
       </ul>
-      <a class="button" href="#">See more</a>
+      <a class="button" href="/posts">See more</a>
     </article>
   </section>
 </main>
