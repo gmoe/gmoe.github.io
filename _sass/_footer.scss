@@ -14,8 +14,9 @@ footer {
 
     .logo {
       display: grid;
-      width: 80px;
-      height: 80px;
+      grid-template-columns: 70px;
+      grid-template-rows: 70px;
+      padding: 10px;
       justify-content: center;
       align-content: center;
       background: $red;
@@ -30,6 +31,11 @@ footer {
       &:hover {
         outline-color: white;
         outline-offset: 5px;
+      }
+
+      img {
+        height: 100%;
+        object-fit: contain;
       }
     }
 
