@@ -1,0 +1,22 @@
+.post-list {
+  margin-bottom: var(--base-spacing);
+
+  .post-entry {
+    display: block;
+    margin-bottom: var(--base-spacing);
+    padding: 40px 60px;
+    color: white;
+
+    &:nth-child(even) { background: $red; }
+    &:nth-child(odd) {
+      background: $blue;
+
+      .button {
+        color: $blue;
+
+        &::after { background: $blue; }
+      }
+    }
+    &:last-child { margin-bottom: 0; }
+  }
+}
