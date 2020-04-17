@@ -102,6 +102,9 @@ button,
     color: white;
 
     &::after { background: white; }
-    &:hover { color: white; }
+    &:hover {
+      color: white;
+      border-color: white;
+    }
   }
 }
