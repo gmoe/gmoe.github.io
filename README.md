@@ -1,4 +1,4 @@
-# griffinmoe.com
+# griffin.moe
 
 This is the Jekyll project for my personal website and resumé.
 
