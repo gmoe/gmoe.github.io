@@ -39,6 +39,7 @@ a, a:visited {
   white-space: nowrap;
   color: white;
   text-decoration: none;
+  font-family: $font-family;
   transition: border-color ($global-timing / 2) ease-in;
 
   &:hover,
@@ -61,7 +62,7 @@ button,
   color: $red;
   border-radius: 40px;
   border: 0;
-  font-family: "Geometr706 Md BT", sans-serif;
+  font-family: $font-family;
   font-size: inherit;
   text-decoration: none;
   letter-spacing: 1px;
