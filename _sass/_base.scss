@@ -109,3 +109,9 @@ button,
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  html {
+    display: block;
+  }
+}

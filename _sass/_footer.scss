@@ -20,7 +20,7 @@ footer {
       justify-content: center;
       align-content: center;
       background: $red;
-      font-size: 30px;
+      font-size: 1.667rem;
       font-weight: bold;
       outline: 1px solid transparent;
 
@@ -62,7 +62,7 @@ footer {
       text-decoration: none;
       border: none;
 
-      .icon { font-size: 22px; }
+      .icon { font-size: 1.222rem; }
 
       &:hover span:nth-child(2) {
         border-bottom-color: $red;
@@ -74,5 +74,13 @@ footer {
         transition: border-bottom-color $global-timing ease;
       }
     }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  footer {
+    grid-template-columns: min-content;
+    grid-gap: 40px;
+    justify-content: center;
   }
 }

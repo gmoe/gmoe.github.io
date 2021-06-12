@@ -110,6 +110,8 @@
   .project.primary,
   .project.secondary {
     display: block;
+
+    .button + .button { margin-top: 20px }
   }
 }
 

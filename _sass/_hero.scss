@@ -10,7 +10,7 @@ header.hero {
   align-items: center;
   background: $red;
   color: white;
-  font-size: 26px;
+  font-size: 1.444rem;
 
   img {
     width: 100%;
@@ -27,7 +27,7 @@ header.hero {
       margin-top: 0;
       font-weight: bold;
       letter-spacing: 1px;
-      font-size: 36px;
+      font-size: 2rem;
     }
 
     p {
@@ -75,9 +75,14 @@ header.hero {
   header.hero {
     grid-template-areas: 'synth' 'content';
     grid-template-columns: 1fr;
+    font-size: 5vw;
 
     .hero-content {
       justify-self: center;
+    }
+
+    .title {
+      font-size: 7vw;
     }
   }
 }
