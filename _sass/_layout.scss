@@ -30,7 +30,7 @@
   }
 
   .cover-image {
-    height: 500px;
+    min-height: 500px;
     background-color: $yellow;
     background-image: linear-gradient(rgba($yellow, 0.5), rgba($yellow, 0.5)), url(/images/modular.png);
     background-size: cover;
