@@ -13,14 +13,10 @@ permalink: /posts/:year/:month/:day/:title
 
 # SEO stuff
 author: griffin_moe
-twitter:
-  username: griffin_moe
-  card: summary
 github_username: gmoe # using above struct breaks gh-pages
 social:
   name: Griffin Moe
   links:
-    - https://twitter.com/griffin_moe
     - https://github.com/gmoe
 
 # Build settings
